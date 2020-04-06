@@ -114,9 +114,9 @@
                             {
                                 for(QuestionCategory obj : lst)
                                 {
-                      %>    
-                      <option value="<%=obj.getId()%>"><%=obj.getCategoryName()%></option>
-                      <%
+			                      %>    
+			                      <option value="<%=obj.getId()%>"><%=obj.getCategoryName()%></option>
+			                      <%
                                 }
                             }
                       %>    
@@ -134,21 +134,6 @@
               </table>
     </div>
     </div>
-            
-            
-            <div class="clearfix">
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item "><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
-            </div>
-          
-    
-  
   <!-- =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= -->
   <script src="js/jquery.min.js"></script>
   <!-- Bootstrap Core Css  -->

@@ -72,21 +72,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
-        <!-- logo -->
-        <a href="index_admin.jsp" class="navbar-brand"><img class="img-responsive" alt="" src="images/logo.png">
-        </a>
-
+        <a href="index_admin.jsp" class="navbar-brand"><img class="img-responsive" alt="" src="images/logo.png"></a>
         <!-- header end -->
       </div>
-
     </div>
   </div>
-      <!-- navigation menu end -->
-      <!--/.navbar-collapse -->
-
   <!-- HEADER Navigation End -->
-
     <!-- =-=-=-=-=-=-= Page Breadcrumb =-=-=-=-=-=-= -->
     <section class="page-title">
       <div class="container">
@@ -94,26 +85,16 @@
           <div class="col-md-7 col-sm-7 co-xs-12 text-right">
               <h1><b>Add Category and SubCategory </b></h1>
           </div>
-          <!-- end col -->
-            <!-- end bread -->
           </div>
-          <!-- end col -->
         </div>
-        <!-- end row -->
       </section>
-   
- <!-- end container -->
- 
     <!-- =-=-=-=-=-=-= Page Breadcrumb End =-=-=-=-=-=-= -->
-
     <!-- =-=-=-=-=-=-= Add Form =-=-=-=-=-=-= -->
     <section class="section-padding-80 white" id="register">
       <div class="container">
         <div class="row">
           <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3">
-
             <div class="box-panel">
-
               <!-- form login -->
               <form action="AddQuestionCategoryAndSubCategory_db.jsp" method="post">
 				<div>
@@ -127,36 +108,35 @@
                             {
                                 for(QuestionCategory obj : lst)
                                 {
-			                      %>    
-				                      <option value="<%=obj.getId()%>"><%=obj.getCategoryName()%></option>
+			                      %><option value="<%=obj.getId()%>"><%=obj.getCategoryName()%></option>
 			                      <%
                                 }
                             }
                       %>    
                   </select>
                 </div>
-				
-
 				<div class="form-group">
                   <!--label>Id</label-->
                   <label>Category Name</label>
                   <input type="text" id="mytextbox" placeholder="Enter Category Name" name="categoryName" class="form-control" required>
                 </div>
-                  <script type="text/javascript">
-				function copyValue(){
-				   var dropboxvalue = document.getElementById('qcat');
-				   var displaytext = dropboxvalue.options[dropboxvalue.selectedIndex].text;
-				   document.getElementById('mytextbox').value = displaytext;
-				   if (parseInt(document.getElementById("qcat").value) === 0) {
-					   document.getElementById("mytextbox").readOnly=false;
-				   }
 
-				   else{
-					    document.getElementById("mytextbox").readOnly=true;
-				   }
-				}
-				</script>
 
+	                  <script type="text/javascript">
+						function copyValue()
+						{
+						   var dropboxvalue = document.getElementById('qcat');
+						   var displaytext = dropboxvalue.options[dropboxvalue.selectedIndex].text;
+						   document.getElementById('mytextbox').value = displaytext;
+						   if (parseInt(document.getElementById("qcat").value) === 0) {
+							   document.getElementById("mytextbox").readOnly=false;
+						   }
+		
+						   else{
+							    document.getElementById("mytextbox").readOnly=true;
+						   }
+						}
+					</script>
 
                 <div class="form-group">
                   <label>Sub Category Name</label>
@@ -170,15 +150,10 @@
             </div>
           </div>
          </div>
-
-<script>
-</script>
    </div>
       <!-- end container -->
-    </section>
+</section>
     <!-- =-=-=-=-=-=-= Register Form End =-=-=-=-=-=-= -->
-
-  
   <!-- =-=-=-=-=-=-= JQUERY =-=-=-=-=-=-= -->
   <script src="js/jquery.min.js"></script>
   <!-- Bootstrap Core Css  -->

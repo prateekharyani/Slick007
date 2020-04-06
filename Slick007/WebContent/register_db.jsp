@@ -37,13 +37,10 @@
              out.println("swal ( 'Message From Server' ,  'Either Duplicate Data Or Some Technical Error' ,"
                      + "  'warning' );");
              out.println("});");
+             out.write("setTimeout(function(){window.location.href='register.jsp'},2000);");
              out.println("</script>");
-              
-              %>
-     		<jsp:include page="register.jsp"></jsp:include>
-     		<%
-     		}
-     		%>
+   		}
+     	%>
        
     </body>
 </html>

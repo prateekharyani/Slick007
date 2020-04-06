@@ -141,31 +141,16 @@
                             Question qs = dao.getQuestionById(a.getQuestionID());
                     %>
                     <tr>
-                        
                         <td><%=qs.getCustomerID()%></td>
-                        
                         <td><%=qs.getExpertID()%></td>
-                        
                         <td><%=qs.getQuestionTitle()%></td>
-
                         <td><%=qs.getQuestionDesc()%></td>
-                        
                         <td><%=a.getAnsDesc()%></td>
                     </tr>
                 <%}}%>
 
                 </tbody>
             </table>
-            <div class="clearfix">
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item "><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
-            </div>
         </div>
     </div>
        

@@ -16,9 +16,8 @@
 		        out.println("swal ( 'Verification Message' ,  'Logout successfully' ,"
 		                + "  'warning' );");
 		        out.println("});");
+                out.write("setTimeout(function(){window.location.href='index.jsp'},1500);");
 		        out.println("</script>");
-		        
-		response.sendRedirect("index.jsp");
 %>
     </body>
 </html>

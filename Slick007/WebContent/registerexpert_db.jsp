@@ -35,10 +35,8 @@
 	             out.println("swal ( 'Message From Server' ,  'You have been successfully Registered Expert ' ,"
 	                     + "  'success' );");
 	             out.println("});");
+	             out.write("setTimeout(function(){window.location.href='index_admin.jsp'},2000);");
 	             out.println("</script>");
-	               %>
-	 				<jsp:include page="index_admin.jsp"></jsp:include>
-	               <%
 	         }
 	         else 
 	         {
@@ -46,15 +44,11 @@
 	             out.println("<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>");
 	             out.println("<script>");
 	             out.println("$(document).ready(function(){");
-	             out.println("swal ( 'Message From Server' ,  'Either Duplicate Data Or Some Technical Error' ,"
-	                     + "  'warning' );");
+	             out.println("swal ( 'Message From Server' ,  'Either Duplicate Data Or Some Technical Error' ,'warning' );");
 	             out.println("});");
+	             out.write("setTimeout(function(){window.location.href='AddQuestionCategoryAndSubCategory.jsp'},2000);");
 	             out.println("</script>");
-	              
-	              %>
-	     		<jsp:include page="AddQuestionCategoryAndSubCategory.jsp"></jsp:include>
-	     		<%
-	     		}
-	     		%>
+	         }
+	     	%>
     </body>
 </html>

@@ -45,35 +45,28 @@
   
   <script type="text/javascript">
             $(document).ready(function(){
-
-// detect change of dropdown
-	$("#qcat").change(function(){
-
-// get id of selected team
-		var catid=$(this).find(':selected').val();
-
-                // set json url
-		var json_url="GetSubCategory_Json.jsp?catid="+catid;
-
+            			 // detect change of dropdown
+				$("#qcat").change(function(){
+			          // get id of selected team
+				var catid=$(this).find(':selected').val();
+			                // set json url
+				var json_url="GetSubCategory_Json.jsp?catid="+catid;
                 $("#subcat").empty();
-		
-                // get json data
-		jQuery.getJSON(json_url, function(data){
-
-			// put new dropdown values to players dropdown
-			jQuery.each(data, function(key, val){
+		                // get json data
+				jQuery.getJSON(json_url, function(data){
+						// put new dropdown values to players dropdown
+				jQuery.each(data, function(key, val){
 				console.log(val[0]);
-                                
-                                for(var i = 0 ; i < val.length ; i++)
-                                {    
-                                var obj = val[i];
-                                console.log(obj.id);
-                                console.log(obj.subCategoryName);
-        $("#subcat").append("<option value='" + obj.id + "'>" + obj.subCategoryName + "</option>")
-                                }
-				});
-		});
-                
+
+				for(var i = 0 ; i < val.length ; i++)
+			    {    
+			      var obj = val[i];
+			      console.log(obj.id);
+			      console.log(obj.subCategoryName);
+			      $("#subcat").append("<option value='" + obj.id + "'>" + obj.subCategoryName + "</option>")
+			    }
+			});
+			});
             });        
 });
         </script>

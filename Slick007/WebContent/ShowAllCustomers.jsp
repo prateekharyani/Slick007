@@ -47,12 +47,10 @@
                     <tr>
 
                         <td><%=s.getId()%></td>
-
                         <td><%=s.getFirstName()%></td>
                         <td><%=s.getLastName()%></td>
                         <td><%=s.getMobileNumber()%></td>
                         <td><%=s.isBlocked()%></td>
-                        
                         <td><%  if (!s.isBlocked()){%>
                             <a href="block_customer.jsp?id=<%=s.getId()%>" class="delete"  data-toggle="modal"><img title="BLOCK" style="height: 30px; width: 30px;"  src="images/33.png"></a>
                         </td>
@@ -88,16 +86,6 @@
 
                 </tbody>
             </table>
-            <div class="clearfix">
-                <ul class="pagination">
-                    <li class="page-item disabled"><a href="#">Previous</a></li>
-                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
-                    <li class="page-item"><a href="#" class="page-link">2</a></li>
-                    <li class="page-item "><a href="#" class="page-link">3</a></li>
-                    <li class="page-item"><a href="#" class="page-link">4</a></li>
-                    <li class="page-item"><a href="#" class="page-link">Next</a></li>
-                </ul>
-            </div>
         </div>
     </div>
  

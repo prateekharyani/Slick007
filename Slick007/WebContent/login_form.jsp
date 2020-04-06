@@ -112,7 +112,7 @@ function myFunction2() {
             var val=request.responseText;
                 if(val.trim() == "success")
                 {
-                    swal ( 'Message From Server' ,  'New password has been sent on your email-id' ,'warning' );
+                    swal ( 'Message From Server' ,  'Reset Password link has been sent on your email-id' ,'warning' );
                 }
                 else
                 {

@@ -133,14 +133,6 @@ customer.setId((String)session.getAttribute("customerID"));
                     <div class="profile-name">
                       <h3>Customer Profile</h3>
                       <i>SLICK System</i>
-                      <!--ul class="social-btns">
-                        <li><a href="#" title=""><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#" title=""><i class="fa fa-google-plus"></i></a>
-                        </li>
-                        <li><a href="#" title=""><i class="fa fa-twitter"></i></a>
-                        </li>
-                      </ul-->
                     </div>
                   </div>
                 </div>
