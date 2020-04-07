@@ -178,7 +178,7 @@
                   
                 <div class="form-group">
                   <label>Email</label>
-                  <input type="text" placeholder="Expert's Email ID" name="id" class="form-control" required>
+                  <input type="email" placeholder="Expert's Email ID" name="id" class="form-control" required>
                 </div>
                  <div class="form-group">
                   <label>Category ID</label>
