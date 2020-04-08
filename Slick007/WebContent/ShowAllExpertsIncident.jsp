@@ -27,9 +27,23 @@
    }  
         </script>
         
+      <style> 
+#myDIV2 {
+  border: 1px solid black;
+  background-color: lightblue;
+  width: 170px;
+  height: 170px
+  overflow: auto;
+}
+#myDIV1 {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px
+  overflow: auto;
+}
+</style>  
     </head>
     <body>
-         <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
@@ -38,15 +52,15 @@
                     </div>
                 </div>
             </div>
-            <table class="table table-striped table-hover">
+            <table class="table table-striped table-hovers">
                 <thead>
                     <tr>
                           <th>Expert ID</th>
                           <th>Customer Id</th>
-                        <th>Question Title</th>
-                        <th>Question Description</th>
-                        <th>Description of Incident</th>
-                        <th>Posted Date of Incident</th>
+                        <th>Question<br> Title</th>
+                        <th>Question<br> Description</th>
+                        <th>Description<br> of Incident</th>
+                        <th>Posted Date<br> of Incident</th>
                         <th>Blocked </th>
                     </tr>
                 </thead>
@@ -66,8 +80,8 @@
                         <td><%=qs.getExpertID()%></td>
                         <td><%=qs.getCustomerID()%></td>
                         <td><%=qs.getQuestionTitle()%></td>
-                        <td><%=qs.getQuestionDesc()%></td>
-                        <td><%=rs.getIncDesc()%></td>
+                        <td><div id="myDIV1"><%=qs.getQuestionDesc()%></div></td>
+                        <td><div id="myDIV2"><%=rs.getIncDesc()%></div></td>
                         <td><%=rs.getPostedDate()%></td>
                         <td>
                             <a href="block_customer.jsp?id=<%=qs.getCustomerID()%>" onclick="clickAndDisable(this);" class="delete"  data-toggle="modal"><img title="BLOCK" style="height: 30px; width: 30px;"  src="images/33.png"></a>
@@ -85,8 +99,7 @@
                 </tbody>
             </table>
         </div>
-    </div>
-   
+  
         
     </body>
 </html>

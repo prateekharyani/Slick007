@@ -98,7 +98,8 @@
 							<div class="panel-heading">
 								<!-- Tabs -->
 								<ul class="nav panel-tabs">
-									<li  class="active"> <a data-toggle="tab" href="#tab1"><i class="icofont icon-layers"></i><span class="hidden-xs">Show Customer List</span></a> 
+									<li  class="active">
+									 <a data-toggle="tab" href="#tab1"><i class="icofont icon-layers"></i><span class="hidden-xs">Show Customer List</span></a> 
 									</li>
 									<li> <a data-toggle="tab" href="#tab2"><i class="icofont icon-layers"></i><span class="hidden-xs">Show Expert List</span></a> 
 									</li>
@@ -114,19 +115,19 @@
 						<div class="panel-body">
 							<div class="tab-content">
 								<div id="tab1" class="tab-pane active">
-                                                                    <jsp:include page="ShowAllCustomers.jsp"></jsp:include>
-								</div>
+                                 <iframe height="500px" width="100%" src="ShowAllCustomers.jsp" style="border: 2px solid green;"></iframe>
+                                </div>
 								<div id="tab2" class="tab-pane">
-                                                                    <jsp:include page="ShowAllExperts.jsp"></jsp:include>
+                                 <iframe height="500px" width="100%" src="ShowAllExperts.jsp" style="border: 2px solid green;"></iframe>
 								</div>
 								<div id="tab3" class="tab-pane">
-									<jsp:include page="ShowAllExpertsIncident.jsp"></jsp:include>
+                                 <iframe height="500px" width="100%" src="ShowAllExpertsIncident.jsp" style="border: 2px solid green;"></iframe>
 								</div>
 								<div id="tab4" class="tab-pane">
-                                    <jsp:include page="ShowAllCustomerIncident.jsp"></jsp:include>
+                                 <iframe height="500px" width="100%" src="ShowAllCustomerIncident.jsp" style="border: 2px solid green;"></iframe>
                                 </div>										
 								<div id="tab5" class="tab-pane">
-                                    <jsp:include page="ShowAllCategories.jsp"></jsp:include>
+                                 <iframe height="500px" width="100%" align="middle" src="ShowAllCategories.jsp" style="border: 2px solid green;"></iframe>
                                 </div>										
                               </div>
 							</div>

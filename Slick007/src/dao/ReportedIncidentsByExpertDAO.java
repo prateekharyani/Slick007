@@ -94,7 +94,6 @@ public class ReportedIncidentsByExpertDAO {
                 {
                     ReportedIncidentsByExpert obj = new ReportedIncidentsByExpert();
                     obj.setId(rs.getInt(1));
-                    System.out.println(rs.getInt(1)+"  lnsdak");
                     obj.setIncDesc(rs.getString(2));
                     obj.setPostedDate(rs.getTimestamp(6)+"");
                     obj.setExpertID(rs.getString(3));

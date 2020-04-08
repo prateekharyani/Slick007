@@ -23,8 +23,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   <!-- =-=-=-=-=-=-= Bootstrap CSS Style =-=-=-=-=-=-= -->
   <link rel="stylesheet" href="css/bootstrap.css">
-  <!-- =-=-=-=-=-=-= Template CSS Style =-=-=-=-=-=-= -->
-  <link rel="stylesheet" href="css/style.css">
   <!-- =-=-=-=-=-=-= Font Awesome =-=-=-=-=-=-= -->
   <link rel="stylesheet" href="css/font-awesome.css">
   <!-- =-=-=-=-=-=-= Et Line Fonts =-=-=-=-=-=-= -->
@@ -92,7 +90,7 @@
   <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h2><b>All Categories</b></h2>
+                        <h2>Show <b>All Categories</b></h2><br><br><br><br><br><br>
                     </div>
                 </div>
             </div>

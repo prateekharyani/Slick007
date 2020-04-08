@@ -11,15 +11,15 @@
       <%
           String id=(String)session.getAttribute("expertid");
           String pass=request.getParameter("password");
-          int cat=Integer.parseInt(request.getParameter("categoryID"));
+/*           int cat=Integer.parseInt(request.getParameter("categoryID"));
           int subcat=Integer.parseInt(request.getParameter("subCategoryID"));
-         
+ */         
           Expert e=new Expert();
           
           e.setPassword(pass);
-          e.setCategoryID(cat);
+/*           e.setCategoryID(cat);
           e.setSubCategoryID(subcat);
-          e.setId(id);
+ */          e.setId(id);
           
           ExpertDAO edo=new ExpertDAO();
           boolean i=edo.updateExpert(e);

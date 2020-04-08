@@ -5,10 +5,6 @@
 <%@page import="dao.CustomerDAO"%>
 <%@page import="dao.ExpertDAO"%>
 
-<%@page import="dto.ReportedIncidentsByExpert"%>
-<%@page import="dao.ReportedIncidentsByExpertDAO"%>
-
-
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -21,14 +17,31 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <title>Customer Incident</title>
+      <style> 
+#myDIV2 {
+  border: 1px solid black;
+  background-color: lightblue;
+  width: 170px;
+  height: 170px
+  overflow: auto;
+}
+#myDIV1 {
+  border: 1px solid black;
+  width: 170px;
+  height: 170px
+  overflow: auto;
+}
+</style>  
+    
+ 
+    
     </head>
     <body>
-         <div class="container">
         <div class="table-wrapper">
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-8">
-                        <h2><b>Incident Raised By Customer To Expert</b></h2><br>
+<h2><b>Incident Raised By Customer To Expert</b></h2><br>
                     </div>
                 </div>
             </div>
@@ -59,8 +72,8 @@
                         <td><%=qs.getCustomerID()%></td>
                         <td><%=qs.getExpertID()%></td>
                         <td><%=qs.getQuestionTitle()%></td>
-                        <td><%=qs.getQuestionDesc()%></td>
-                        <td><%=rs.getIncDesc()%></td>
+                        <td><div id="myDIV1"><%=qs.getQuestionDesc()%></div></td>
+                        <td><div id="myDIV2"><%=rs.getIncDesc()%></div></td>
                         <td><%=rs.getPostedDate()%></td>
                         <td>
                             <a href="block_expert.jsp?id=<%=qs.getExpertID()%>" onclick="clickAndDisable(this);" class="delete"  data-toggle="modal"><img title="BLOCK" style="height: 30px; width: 30px;"  src="images/33.png"></a>
@@ -79,9 +92,6 @@
                 </tbody>
             </table>
         </div>
-    </div>
-   
-        
     </body>
 </html>
 

@@ -268,13 +268,10 @@ public class ExpertDAO {
 		try {
 		    con = DatabaseConnection.getConnection();
 	        
-	        pst = con.prepareStatement("update expert set password = ? , categoryID = ? , "
-	                + "subCategoryID = ? where id = ? ");
+	        pst = con.prepareStatement("update expert set password = ? where id = ? ");
 	        
 	         pst.setString(1, obj.getPassword());
-	         pst.setInt(2, obj.getCategoryID());
-	         pst.setInt(3, obj.getSubCategoryID());
-	         pst.setString(4, obj.getId());
+	         pst.setString(2, obj.getId());
 	         
 	        int count = pst.executeUpdate();
 	        

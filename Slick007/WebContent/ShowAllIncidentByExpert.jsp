@@ -15,6 +15,23 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <title>Incident By Expert</title>
     </head>
+<style> 
+	#myDIV2 {
+	  border: 1px solid black;
+	  background-color: lightblue;
+	  width: 170px;
+	  height: 170px
+	  overflow: auto;
+	}
+	#myDIV1 {
+	  border: 1px solid black;
+	  width: 200px;
+	  height: 200px
+	  overflow: auto;
+	}
+</style>  
+    
+
     <body>
          <div class="container">
         <div class="table-wrapper">
@@ -48,8 +65,8 @@
 
                     <tr>
                         <td><%=qs.getQuestionTitle()%></td>
-                        <td><%=qs.getQuestionDesc()%></td>
-                        <td><%=rs.getIncDesc()%></td>
+                        <td><div id="myDIV1"><%=qs.getQuestionDesc()%></div>></td>
+                        <td><div id="myDIV2"><%=rs.getIncDesc()%></div></td>
                         <td><%=rs.getPostedDate()%></td>
                     </tr>
 

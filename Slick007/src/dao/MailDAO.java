@@ -46,8 +46,6 @@ public class MailDAO {
 
          //3rd step)send message
          Transport.send(message);
-
-         System.out.println("Done");
          b = true;
          
          } catch (MessagingException e) {

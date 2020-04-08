@@ -37,6 +37,24 @@
   <!-- JavaScripts -->
   <script src="js/modernizr.js"></script>
 
+      <style> 
+#myDIV2 {
+  border: 1px solid black;
+  background-color: lightblue;
+  width: 170px;
+  height: 170px
+  overflow: auto;
+}
+#myDIV1 {
+  border: 1px solid black;
+  width: 170px;
+  height: 170px
+  overflow: auto;
+}
+</style>  
+    
+  
+
 </head>
 
 <body>
@@ -144,7 +162,7 @@
                         <td><%=qs.getCustomerID()%></td>
                         <td><%=qs.getExpertID()%></td>
                         <td><%=qs.getQuestionTitle()%></td>
-                        <td><%=qs.getQuestionDesc()%></td>
+                        <td><div id="myDIV1"><%=qs.getQuestionDesc()%></div></td>
                         <td><%=a.getAnsDesc()%></td>
                     </tr>
                 <%}}%>
