@@ -47,7 +47,7 @@
 		<div class="row">
 			<div class="col-lg-4 col-md-4 col-sm-6 col-xs-4">
 				<ul class="top-nav nav-left">
-					<li><a href="index_admin.jsp">Home</a>
+					<li><a href="index_customer.jsp">Home</a>
 					</li>
 				</ul>
 			</div>

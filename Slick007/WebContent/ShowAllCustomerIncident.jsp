@@ -2,6 +2,12 @@
 <%@page import="dao.ReportedIncidentsByCustomerDAO"%>
 <%@page import="dto.Question"%>
 <%@page import="dao.QuestionDAO"%>
+<%@page import="dao.CustomerDAO"%>
+<%@page import="dao.ExpertDAO"%>
+
+<%@page import="dto.ReportedIncidentsByExpert"%>
+<%@page import="dao.ReportedIncidentsByExpertDAO"%>
+
 
 <%@page import="java.util.ArrayList"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -44,10 +50,11 @@
                             ReportedIncidentsByCustomerDAO dao = new ReportedIncidentsByCustomerDAO();
                             
                             ArrayList<ReportedIncidentsByCustomer> lst = dao.getAllIncidentsByCustomer();
-
                             for (ReportedIncidentsByCustomer rs : lst) {
-                            Question qs = qd.getQuestionById(rs.getQuestionID());
+                           
+                                Question qs = qd.getQuestionById(rs.getQuestionID());
                     %>
+
                     <tr>
                         <td><%=qs.getCustomerID()%></td>
                         <td><%=qs.getExpertID()%></td>
@@ -56,12 +63,15 @@
                         <td><%=rs.getIncDesc()%></td>
                         <td><%=rs.getPostedDate()%></td>
                         <td>
-                            <a href="block_expert.jsp?id=<%=qs.getExpertID()%>" class="delete"  data-toggle="modal"><img title="BLOCK" style="height: 30px; width: 30px;"  src="images/33.png"></a>
+                            <a href="block_expert.jsp?id=<%=qs.getExpertID()%>" onclick="clickAndDisable(this);" class="delete"  data-toggle="modal"><img title="BLOCK" style="height: 30px; width: 30px;"  src="images/33.png"></a>
                         </td>
+                        
                     </tr>
+
                 <%
                         }
-                    } catch (Exception e) {
+                    } 
+                     catch (Exception e) {
 
                     }
                 %>

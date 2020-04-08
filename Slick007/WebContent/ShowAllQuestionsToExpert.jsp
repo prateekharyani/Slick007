@@ -67,7 +67,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
                     </div>
                 </div>
             </div>
-          <form action="AnswerQuestion.jsp" method="post"></form>
+          <form action="AnswerQuestion.jsp" method="post" id="my_form"></form>
             <table class="table table-striped table-hover">
                 <thead>
                     <tr>
@@ -95,7 +95,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
 				                        <td>
 				                            <input type="hidden" name="questionId" value="<%=qs.getId()%>" form="my_form" />
 				                            <input type="hidden" name="expertId" value="<%=qs.getExpertID()%>" form="my_form" />
-				                            <textarea rows="4" cols="50" name="ans"></textarea>
+				                            <textarea rows="4" cols="50" name="ans" form="my_form"></textarea>
 				                        	
 				                        </td>
 				                        <td><input type="submit" value="Submit Your Answer" form="my_form" /> &nbsp;&nbsp;&nbsp;

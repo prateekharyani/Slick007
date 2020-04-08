@@ -57,9 +57,7 @@ public class ReportedIncidentsByCustomerDAO {
 	                    obj.setPostedDate(rs.getTimestamp(3)+"");
 	                    obj.setExpertID(rs.getString(4));
 	                    obj.setCustomerID(rs.getString(5));
-	                    obj.setQuestionID(rs.getInt(1));
-	                    
-	                    System.out.println(obj.getId()+"  lkcsm");
+	                    obj.setQuestionID(rs.getInt(6));
 	                    CustomerIncidentList.add(obj);
 	                    
 	                }

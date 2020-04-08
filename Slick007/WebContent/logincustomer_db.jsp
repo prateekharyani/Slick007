@@ -18,10 +18,10 @@
                               
                     if(i)
                     {
+                    	out.println("<script>");
                         session.setAttribute("customerID",loginFormObject.getId());
-				        %>
-				        <jsp:forward page="index_customer.jsp"></jsp:forward>
-				        <%
+                        out.write("setTimeout(function(){window.location.href='index_customer.jsp'},500);");
+                        out.println("</script>");
                     }
                     else
                     {

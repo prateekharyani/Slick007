@@ -52,7 +52,6 @@
                 </thead>
                 <tbody>
                     <% try {
-                            CustomerDAO da = new CustomerDAO();    
                             QuestionDAO qd = new QuestionDAO();
                             ReportedIncidentsByExpertDAO dao = new ReportedIncidentsByExpertDAO();
                             

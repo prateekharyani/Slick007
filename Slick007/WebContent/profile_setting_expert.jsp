@@ -134,7 +134,7 @@
                 <div class="form-group">
                   <label>Password</label>
                   <input type="password" placeholder="Enter your Password" value="<%=e.getPassword()%>" name="password" class="form-control" id="myInput"><br>
-                  <input type="checkbox" onclick="myFunction()"> 
+                  <input type="checkbox" onclick="myFunction()"> Show Password
                   </div>
                   <div class="form-group">
                   <label>Category Name</label>
